@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "app": "weavy-clone-mock-v1",
+  "nodes": [
+    {
+      "id": "node_1",
+      "type": "prompt",
+      "title": "Prompt",
+      "prompt": "Hoàng hôn trên biển, phong cách anime Nhật Bản",
+      "x": 40,
+      "y": 60
+    },
+    {
+      "id": "node_2",
+      "type": "image",
+      "title": "Tạo ảnh",
+      "prompt": "Hoàng hôn trên biển, phong cách anime Nhật Bản",
+      "x": 320,
+      "y": 60
+    },
+    {
+      "id": "node_3",
+      "type": "upscale",
+      "title": "Upscale",
+      "prompt": "",
+      "x": 600,
+      "y": 60
+    }
+  ],
+  "edges": [
+    {
+      "from": "node_1",
+      "to": "node_2"
+    },
+    {
+      "from": "node_2",
+      "to": "node_3"
+    }
+  ]
+}
